@@ -132,7 +132,7 @@ var taskButtonHandler = function (event) {
 }
 
 var editTask = function (taskId) {
-  console.log("editing task #" + taskId);
+
   //get task list item element
   var taskSelected = document.querySelector(".task-item[data-task-id='" + taskId + "']");
   //get content from task name and type
@@ -153,8 +153,7 @@ var deleteTask = function (taskId) {
 }
 
 var taskStatusChangeHandler = function (event) {
-  console.log(event.target);
-  console.log(event.target.getAttribute("data-task-id"));
+
   //get the task item's id
   var taskId = event.target.getAttribute("data-task-id");
   //get the currently selected option's value and convert to lowercase
